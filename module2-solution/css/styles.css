@@ -1,0 +1,116 @@
+/* Module2 Homework Assignment CSS file */
+
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+/* div container representig one of the three menu categories */
+div#container {
+  border: 2px solid black;
+  background-color: grey;
+  height: 150px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  position: relative;
+}
+
+/* class target for the menu category title */
+.rel-tag {
+  border: 2px solid black;
+  color: black;
+  position: absolute;
+  right: -2px;
+  top:-2px; 
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 125%;
+}
+
+/* Three text modifiers to provide different background to the menu categories */
+.text1 {
+  background-color: lightgrey;
+}
+
+.text2 {
+  background-color: pink;
+}
+
+.text3 {
+  background-color: orange;
+}
+
+.row {
+  width: 100%;
+}
+
+/* **** Media-specific definitions **** */
+/* Desktop Devices */
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/* Tablet devices only */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* Mobile devices only */
+@media (max-width: 167px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  .col-sm-4 {
+    width: 33.33%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
